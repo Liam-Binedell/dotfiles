@@ -1,4 +1,4 @@
--- Environment variables -- LOST
+-- Environment variables
 require("beefcake/env")
 -- Config
 require("beefcake/config")
