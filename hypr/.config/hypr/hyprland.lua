@@ -1,12 +1,12 @@
--- Environment variables
+-- Environment variables -- LOST
 require("beefcake/env")
 -- Config
 require("beefcake/config")
--- Autostart
+-- Autostart -- LOST
 require("beefcake/autostart")
--- Permissions
+-- Permissions -- LOST
 require("beefcake/perms")
--- Monitors
+-- Monitors -- LOST
 require("beefcake/monitors")
 -- Desktop
 require("beefcake/desktop")
