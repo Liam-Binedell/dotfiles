@@ -4,7 +4,7 @@ require("beefcake/env")
 require("beefcake/config")
 -- Autostart -- LOST
 require("beefcake/autostart")
--- Permissions -- LOST
+-- Permissions
 require("beefcake/perms")
 -- Monitors -- LOST
 require("beefcake/monitors")
