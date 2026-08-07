@@ -2,7 +2,7 @@
 require("beefcake/env")
 -- Config
 require("beefcake/config")
--- Autostart -- LOST
+-- Autostart
 require("beefcake/autostart")
 -- Permissions
 require("beefcake/perms")
