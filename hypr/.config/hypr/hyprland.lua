@@ -6,7 +6,7 @@ require("beefcake/config")
 require("beefcake/autostart")
 -- Permissions
 require("beefcake/perms")
--- Monitors -- LOST
+-- Monitors
 require("beefcake/monitors")
 -- Desktop
 require("beefcake/desktop")
