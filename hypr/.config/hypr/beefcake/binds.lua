@@ -42,19 +42,19 @@ hl.bind(mainMod .. " + ALT + right", hl.dsp.window.swap({ direction = "right" })
 hl.bind(mainMod .. " + ALT + up", hl.dsp.window.swap({ direction = "up" }))
 hl.bind(mainMod .. " + ALT + down", hl.dsp.window.swap({ direction = "down" }))
 
--- Move focus with mainMod + arrow keys
+-- Move focus with mainMod + arrow keys (Vim mode bby)
 hl.bind(mainMod .. " + H",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + K",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J",  hl.dsp.focus({ direction = "down" }))
 
--- Move focused window with mainMod + arrow keys
+-- Move focused window with mainMod + arrow keys (Vim mode bby)
 hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
--- Swap focused window with mainMod + arrow keys
+-- Swap focused window with mainMod + arrow keys (Vim mode bby)
 hl.bind(mainMod .. " + ALT + H", hl.dsp.window.swap({ direction = "left" }))
 hl.bind(mainMod .. " + ALT + L", hl.dsp.window.swap({ direction = "right" }))
 hl.bind(mainMod .. " + ALT + K", hl.dsp.window.swap({ direction = "up" }))
