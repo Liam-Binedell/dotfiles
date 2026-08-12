@@ -28,22 +28,33 @@
     "custom/power"
   ],
   // Modules configuration
+  // Alt workspace config
   // "hyprland/workspaces": {
-  //     "disable-scroll": true,
-  //     "all-outputs": true,
-  //     "warp-on-scroll": false,
-  //     "format": "{name}: {icon}",
-  //     "format-icons": {
-  //         "1": "",
-  //         "2": "",
-  //         "3": "",
-  //         "4": "",
-  //         "5": "",
-  //         "urgent": "",
-  //         "focused": "",
-  //         "default": ""
-  //     }
+  //   "format": "{icon}",
+  //   "format-icons": {
+  //     "active": "",
+  //     "default": ""
+  //   },
+  //   "all-outputs": true,
+  //   "workspace-taskbar": {
+  //     "enable": true,
+  //     "format": "{title}"
+  //   }
   // },
+  "hyprland/workspaces": {
+    "format": "{id} {windows} ",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    },
+    "format-window-separator": "|",
+    "workspace-taskbar": {
+      "enable": true,
+      "update-active-window": true,
+      "format": "{icon}",
+      "icon-size": 18
+    }
+  },
   "mpris": {
     "format": "{player_icon} {dynamic} {position}/{length}",
     "dynamic-order": [
