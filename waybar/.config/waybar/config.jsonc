@@ -1,5 +1,6 @@
 // -*- mode: jsonc -*-
 {
+  "reload_style_on_change": true,
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 30, // Waybar height (to be removed for auto height)
@@ -42,18 +43,24 @@
   //   }
   // },
   "hyprland/workspaces": {
-    "format": "{id} {windows} ",
+    "format": " {{ id:{id}, apps:[{windows}] }} ",
+    "on-click": "activate",
     "format-icons": {
       "active": "",
       "default": ""
     },
-    "format-window-separator": "|",
+    "format-window-separator": ",",
     "workspace-taskbar": {
       "enable": true,
       "update-active-window": true,
       "format": "{icon}",
       "icon-size": 18
     }
+  },
+  "hyprland/window": {
+    "icon": true,
+    "separate-outputs": true,
+    "format": "{initialTitle}"
   },
   "mpris": {
     "format": "{player_icon} {dynamic} {position}/{length}",
@@ -62,7 +69,7 @@
       "title"
     ],
     "dynamic-separator": " - ",
-    "dynamic-len": 50,
+    "dynamic-len": 100,
     "player-icons": {
       "spotify": "󰓇"
     },
