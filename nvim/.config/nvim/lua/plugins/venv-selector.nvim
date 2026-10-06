@@ -1,0 +1,11 @@
+{
+  "linux-cultist/venv-selector.nvim",
+  dependencies = { "neovim/nvim-lspconfig" },
+  opts = {
+    -- auto detect .venv in current dir
+    search = true,
+  },
+  keys = {
+    { "<leader>vs", "<cmd>VenvSelect<CR>", desc = "Select venv" },
+  },
+}
