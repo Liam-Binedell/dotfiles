@@ -1,0 +1,25 @@
+# Ghostty config (converted from kitty.conf)
+# Location: ~/.config/ghostty/config
+
+
+# binds
+keybind = ctrl+shift+n=new_window
+window-inherit-working-directory = true
+
+# colorscheme
+foreground = #db9cc9
+background-opacity = 0.9
+background-blur = 64
+
+# cursor
+cursor-style = underline
+cursor-color = #8800f6
+cursor-text = #db9c09
+
+# scrollbar
+scrollbar = system
+
+# shell
+term = xterm-256color
+shell-integration = detect
+shell-integration-features = ssh-env,ssh-terminfo,no-cursor
