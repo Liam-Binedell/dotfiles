@@ -5,7 +5,7 @@ local manager = require("beefcake/layout_manager")
 ---------------------
 
 -- Set programs that you use
-local terminal = "foot"
+local terminal = "ghostty"
 local fileManager = "nautilus"
 local menu = "fuzzel"
 
