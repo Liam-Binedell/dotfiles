@@ -13,12 +13,15 @@ background-blur = 64
 
 # cursor
 cursor-style = underline
-cursor-color = #8800f6
+cursor-color = #db9cc9
 cursor-text = #db9c09
 
 # scrollbar
 scrollbar = system
 
+# shaders
+custom-shader = ./shaders/test.glsl
+custom-shader-animation = true
 # shell
 term = xterm-256color
 shell-integration = detect
