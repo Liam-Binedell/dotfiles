@@ -5,11 +5,15 @@
 }
 
 window#waybar {
-    background-color: rgba(20, 20, 20, 0.8);
-    border-bottom: 1px solid rgba(200, 120, 10, 0.9);
+    background-color: transparent;
+    /* border-bottom: 1px solid rgba(200, 120, 10, 0.9); */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+}
+
+window#waybar > box {
+    padding: 5px;
 }
 
 window#waybar.hidden {
@@ -45,7 +49,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    /* box-shadow: inset 0 -3px #ffffff; */
 }
 
 /* you can set a style on hover for any module like this */
@@ -56,16 +60,20 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: #c8780a;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.empty {
+    color: #780ae6;
 }
 
 #workspaces button.focused, #workspaces button.active {
-    background-color: rgba(248, 184, 10, 0.2);
-    box-shadow: inset 0 -3px rgba(248, 184, 10, 1);
+    background-color: transparent;
+    color: #c8780a;
+    /* box-shadow: inset 0 -3px rgba(248, 184, 10, 1); */
 }
 
 #workspaces button.urgent {
@@ -77,6 +85,40 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#mpris {
+  background-image: linear-gradient(to right, #141414, #780ae6, #141414);
+  border: solid 0;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+#misc {
+  background-color: #141414;
+  border: solid 0;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#media {
+  background-color: #141414;
+  border: solid 0;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#hardware {
+  background-color: #141414;
+  border: solid 0;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#sys {
+  background-color: #141414;
+  border: solid 0;
+  border-radius: 15px;
+  padding: 5px;
+}
 #clock,
 #battery,
 #cpu,
@@ -98,11 +140,19 @@ button:hover {
     color: #ffffff;
 }
 
-#window,
 #workspaces {
     margin: 0 4px;
+    padding: 4px;
+    border: solid 0px;
+    background-color: #141414;
+    border-radius: 15px;
 }
 
+#window {
+  background-color: #141414;
+  padding: 0 4px;
+  border-radius: 2px;
+}
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
@@ -221,7 +271,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+  border: groove 1px;
 }
 
 #tray > .passive {

@@ -8,26 +8,50 @@
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
+    "hyprland/window",
     "hyprland/workspaces",
     "hyprland/scratchpad",
-    "hyprland/window",
   ],
   "modules-center": [
     "mpris"
   ],
   "modules-right": [
-    "idle_inhibitor",
-    "power-profiles-daemon",
-    "pulseaudio",
-    "backlight",
-    "network",
-    "cpu",
-    "memory",
-    "battery",
-    "clock",
-    "tray",
-    "custom/power"
+    "group/misc",
+    "group/media",
+    "group/hardware",
+    "group/sys",
   ],
+  "group/misc": {
+    "orientation": "horizontal",
+    "modules": [
+      "idle_inhibitor",
+      "power-profiles-daemon",
+    ],
+  },
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "backlight",
+    ],
+  },
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "cpu",
+      "memory",
+    ],
+  },
+  "group/sys": {
+    "orientation": "horizontal",
+    "modules": [
+      "battery",
+      "clock",
+      "tray",
+      "custom/power",
+    ],
+  },
   // Modules configuration
   // Alt workspace config
   // "hyprland/workspaces": {
@@ -43,24 +67,31 @@
   //   }
   // },
   "hyprland/workspaces": {
-    "format": " {{ id:{id}, apps:[{windows}] }} ",
+    "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      "active": "",
-      "default": ""
+      "active": "󰝥",
+      "default": ""
     },
-    "format-window-separator": ",",
-    "workspace-taskbar": {
-      "enable": true,
-      "update-active-window": true,
-      "format": "{icon}",
-      "icon-size": 18
-    }
+    "persistent-workspaces": {
+      "*": 5,
+    },
+    // "format-window-separator": ",",
+    // "workspace-taskbar": {
+    //   "enable": false,
+    //   "update-active-window": true,
+    //   "format": "{icon}",
+    //   "icon-size": 18
+    // }
   },
   "hyprland/window": {
     "icon": true,
+    "icon-size": 20,
     "separate-outputs": true,
-    "format": "{initialTitle}"
+    "format": "",
+    "rewrite": {
+      "": "404",
+    }
   },
   "mpris": {
     "format": "{player_icon} {dynamic} {position}/{length}",
